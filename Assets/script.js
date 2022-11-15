@@ -101,7 +101,7 @@ $(document).ready(function () {
       var blockHour = parseInt($(this).attr("id").split("hour")[1])
       console.log(blockHour)
 
-      //check if we've moved past this time, click into css/html given classes of past, present, or future
+      //check if we've moved past this time, goes into css/html given classes of past, present, or future
       if (blockHour < currentHour) {
         $(this).addClass("past");
         $(this).removeClass("future");
